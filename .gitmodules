@@ -1,0 +1,3 @@
+[submodule "ksqldb-udf"]
+	path = ksqldb-udf
+	url = git@github.com:lumenghe/ksqldb-udf.git
