@@ -1,0 +1,4 @@
+.docker/lumenghe-mysql/fixtures/legacy-database/*.sql.gz
+
+# Secrets files
+gcloud.json
