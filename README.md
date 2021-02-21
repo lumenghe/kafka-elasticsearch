@@ -51,7 +51,7 @@ curl -i -X POST -H "Accept:application/json" -H "Content-Type: application/json"
 ### OPTION with ksqldb-server and ksqldb-cli elasticsearch-sink payload
 ```bash
 curl -i -X POST -H "Accept:application/json" -H "Content-Type: application/json"  http://127.0.0.1:8083/connectors/ -d '{
-  "name": "elasticsearch-sink",
+  "name": "elasticsearch-sink-legacy",
   "config": {
     "connector.class": "io.confluent.connect.elasticsearch.ElasticsearchSinkConnector",
     "topics": "SUMMARY_INDEX",
@@ -64,7 +64,7 @@ curl -i -X POST -H "Accept:application/json" -H "Content-Type: application/json"
     "tasks.max": "1",
     "connection.url": "http://elasticsearch:9200",
     "type.name": "test-type",
-    "name": "elasticsearch-sink",
+    "name": "elasticsearch-sink-legacy",
     "batch.size": 200,
     "max.buffered.records": 1500,
     "flush.timeout.ms": 10000
