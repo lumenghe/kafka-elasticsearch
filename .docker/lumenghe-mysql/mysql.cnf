@@ -1,0 +1,27 @@
+# ----------------------------------------------
+# Configuration extracted from:
+# debezium/example-mysql:1.1
+# ----------------------------------------------
+[mysqld]
+skip-host-cache
+skip-name-resolve
+
+# ----------------------------------------------
+# Enable the binlog for replication & CDC
+# ----------------------------------------------
+server-id         = 223344
+log_bin           = mysql-bin
+expire_logs_days  = 1
+binlog_format     = ROW
+binlog_row_image  = FULL
+
+# ----------------------------------------------
+# Recommended configuration from:
+# https://debezium.io/documentation/reference/1.0/assemblies/cdc-mysql-connector/as_setup-the-mysql-server.html
+# ----------------------------------------------
+gtid_mode = ON
+enforce_gtid_consistency = ON
+binlog_rows_query_log_events = ON
+
+# interactive_timeout = ??
+# wait_timeout = ??
