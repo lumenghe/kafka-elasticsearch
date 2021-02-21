@@ -2,7 +2,7 @@
 # kafka-elasticsearch
 1. Clone the `kafka-elasticsearch` repository and go into the project directory:
 ```bash
-git clone git@github.com:lumenghe/kafka-elasticsearch.git
+git clone git@github.com:lumenghe/kafka-elasticsearch.git --recurse-submodules
 cd kafka-elasticsearch
 ```
 
