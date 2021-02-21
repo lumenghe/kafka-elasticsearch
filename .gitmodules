@@ -1,3 +1,6 @@
 [submodule "ksqldb-udf"]
 	path = ksqldb-udf
 	url = git@github.com:lumenghe/ksqldb-udf.git
+[submodule "kafka-stream-processor"]
+	path = kafka-stream-processor
+	url = git@github.com:lumenghe/kafka-stream-processor.git
