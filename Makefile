@@ -4,7 +4,6 @@ DOCKER = docker
 COMPOSE = docker-compose -p kafka-elasticsearch
 MAKE = make
 UNAME_S := $(shell uname -s)
-KZH_UTILS_BIN = utilities/bin
 
 SUBMODULES = $(sort $(dir $(wildcard ./*lumenghe*/)))
 SERVICES = $(sort $(dir $(wildcard ./*lumenghe*/)))
