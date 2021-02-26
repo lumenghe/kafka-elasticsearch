@@ -151,3 +151,7 @@ create stream summary_index as \
 SET 'auto.offset.reset' = 'earliest';
 select * from vido emit changes;
 ```
+8. clean docker services
+```bash
+make down
+```
