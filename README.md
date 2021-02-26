@@ -146,3 +146,8 @@ create stream summary_index as \
                 left join video within 7 days on user.after->user_id = video.after->user_id \
                 left join photo within 7 days on user.after->user_id = photo.after->user_id;
 ```
+* check video stream
+```bash
+SET 'auto.offset.reset' = 'earliest';
+select * from vido emit changes;
+```
